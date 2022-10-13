@@ -1,0 +1,38 @@
+@import './settings.scss';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #1D3557;
+  font-family: $font-text;
+  font-size: ($base-size * 1.1);
+  color: $color-light;
+  letter-spacing: 0.5px;
+}
+
+// :global(.container) {
+//   width: 90%;
+//   max-width: 1400px;
+//   margin: 0 auto;
+// }
+
+.main-section {
+  background: transparent;
+  max-width: 600px;
+  width: 90%;
+  height: 500px;
+  margin: 30px auto;
+}
+
+.clock-holder {
+  width: 100%;
+  background: #457B9D;
+  margin: 30px auto;
+  position: relative;
+}
+
+@import "./typography.scss";

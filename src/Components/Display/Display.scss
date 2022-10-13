@@ -1,0 +1,17 @@
+@import '../../styles/settings.scss';
+
+.stopwatch {
+  padding: 60px 0px;
+  text-align: center;
+}
+  
+.stopwatch span {
+  background: $color-light;
+  color: $color-dark;
+  display: inline-block;
+  font-family: monospace;
+  font-size: 22px;
+  padding: 20px;
+  border-radius: 5px;
+  width: 70px;
+}

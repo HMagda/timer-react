@@ -1,0 +1,50 @@
+@import '../../styles/settings.scss';
+
+
+.buttons {
+
+    .stopwatch-btn {
+        background: $color-light;
+        color: $color-dark;
+        margin-top: 30px;
+        margin-left: 5px;
+        border: none;
+        padding: 12px 20px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 150px;
+        transition: background 1s;
+        cursor: pointer;
+
+        &.stopwatch-btn-red {
+            border: 2px solid $color-danger;
+            color: $color-dark;
+
+            &:hover {
+                background: $color-danger;
+                border: 2px solid $color-danger;
+            }
+        }
+
+        &.stopwatch-btn-yel {
+            border: 2px solid $color-warning;
+            color: $color-dark;
+
+            &:hover {
+                background: $color-warning;
+                border: 2px solid $color-warning;
+            }
+        }
+
+        &.stopwatch-btn-gre {
+            border: 2px solid $color-success;
+            color: $color-dark;
+
+            &:hover {
+                background: $color-success;
+                border: 2px solid $color-success;
+            }
+        }
+    }
+}
