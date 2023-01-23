@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### You can first write in the console `yarn install` and then `yarn start` to start the project.
+
 ## Available Scripts
 
 In the project directory, you can run:
