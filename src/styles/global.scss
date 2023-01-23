@@ -1,24 +1,21 @@
 @import './settings.scss';
+@import './typography.scss';
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background: #1D3557;
+  background: #1d3557;
   font-family: $font-text;
   font-size: ($base-size * 1.1);
   color: $color-light;
   letter-spacing: 0.5px;
 }
-
-// :global(.container) {
-//   width: 90%;
-//   max-width: 1400px;
-//   margin: 0 auto;
-// }
 
 .main-section {
   background: transparent;
@@ -30,9 +27,7 @@ body {
 
 .clock-holder {
   width: 100%;
-  background: #457B9D;
+  background: #457b9d;
   margin: 30px auto;
   position: relative;
 }
-
-@import "./typography.scss";

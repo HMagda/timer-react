@@ -1,15 +1,20 @@
-// $color-light: #fff;
-$color-dark: #1D3557;
-$color-light: #F1FAEE;
-$color-main-light: #A8DADC;
-$color-main-dark: #457B9D;
+$color-main-light: #a8dadc;
+$color-main-dark: #457b9d;
+$color-dark: #1d3557;
+$color-light: #f1faee;
 
-$color-warning: #FEE440;
+$color-warning: #fee440;
 $color-success: #22bb33;
-$color-danger: #E63946;
+$color-danger: #e63946;
 
 $font-text: 'Inconsolata', monospace;
 
 $radius: 5px;
 $base-size: 20px;
 $transition: all 0.5s;
+
+@mixin respond-small {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
