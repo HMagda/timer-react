@@ -14,7 +14,7 @@ function App() {
     setInterv(setInterval(run, 10));
   };
 
-  var updatedMs = time.ms,
+  let updatedMs = time.ms,
     updatedS = time.s,
     updatedM = time.m,
     updatedH = time.h;
