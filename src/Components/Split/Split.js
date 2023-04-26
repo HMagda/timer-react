@@ -1,15 +1,15 @@
 import React from 'react';
 import './Split.scss';
 
-function Split(props) {
+function Split({splitRecords}) {
   return (
     <div>
       <table>
         <tbody>
-          {props.splitRecords.map((value, index) => (
+          {splitRecords.map((value, index) => (
             <tr key={value}>
-              <td >{index + 1}:</td>
-              <td >{value}</td>
+              <td>{index + 1}:</td>
+              <td>{value}</td>
             </tr>
           ))}
         </tbody>

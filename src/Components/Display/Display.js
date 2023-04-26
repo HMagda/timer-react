@@ -1,13 +1,13 @@
 import React from 'react';
 import './Display.scss';
 
-function Display(props) {
+function Display({time}) {
   return (
     <div className='numbers'>
-      <span className='time'>{NormalizeNumber(props.time.h)}</span>&nbsp;:&nbsp;
-      <span className='time'>{NormalizeNumber(props.time.m)}</span>&nbsp;:&nbsp;
-      <span className='time'>{NormalizeNumber(props.time.s)}</span>&nbsp;:&nbsp;
-      <span className='time'>{NormalizeNumber(props.time.ms)}</span>
+      <span className='time' data-testid='time-h'>{NormalizeNumber(time.h)}</span>&nbsp;:&nbsp;
+      <span className='time' data-testid='time-m'>{NormalizeNumber(time.m)}</span>&nbsp;:&nbsp;
+      <span className='time' data-testid='time-s'>{NormalizeNumber(time.s)}</span>&nbsp;:&nbsp;
+      <span className='time' data-testid='time-ms'>{NormalizeNumber(time.ms)}</span>
     </div>
   );
 }
