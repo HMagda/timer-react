@@ -33,7 +33,7 @@ describe('App component', () => {
     expect(screen.queryByText('Resume')).not.toBeInTheDocument();
   });
 
-  test('stop function stops the timer', () => {
+  test('pause function pauses the timer', () => {
     render(<App />);
     fireEvent.click(screen.getByText('Start'));
     fireEvent.click(screen.getByText('Pause'));

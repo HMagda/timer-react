@@ -28,11 +28,11 @@ test('renders Reset and Resume buttons when status is 2', () => {
   expect(screen.queryByText('Pause')).not.toBeInTheDocument();
 });
 
-test('clicking Stop button calls stop function', () => {
-  const mockStop = jest.fn();
-  render(<Button status={1} stop={mockStop} />);
+test('clicking Pause button calls pause function', () => {
+  const mockPause = jest.fn();
+  render(<Button status={1} pause={mockPause} />);
   fireEvent.click(screen.getByText('Pause'));
-  expect(mockStop).toHaveBeenCalled();
+  expect(mockPause).toHaveBeenCalled();
 });
 
 test('clicking Start button calls start function', () => {

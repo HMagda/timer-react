@@ -36,7 +36,7 @@ function App() {
     return setTime({ms: updatedMs, s: updatedS, m: updatedM, h: updatedH});
   };
 
-  const stop = () => {
+  const pause = () => {
     clearInterval(interv);
     setStatus(2);
   };
@@ -69,7 +69,7 @@ function App() {
           <Display time={time} />
           <Button
             status={status}
-            stop={stop}
+            pause={pause}
             start={start}
             reset={reset}
             split={split}

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Button.scss';
 
-function Button({ status, stop, start, reset, split }) {
+function Button({ status, pause, start, reset, split }) {
   return (
     <div className="buttons">
       {status === 0 && (
@@ -14,7 +14,7 @@ function Button({ status, stop, start, reset, split }) {
           <button className="stopwatch-btn stopwatch-btn-gre" onClick={split}>
             Split
           </button>
-          <button className="stopwatch-btn stopwatch-btn-yel" onClick={stop}>
+          <button className="stopwatch-btn stopwatch-btn-yel" onClick={pause}>
             Pause
           </button>
         </>
