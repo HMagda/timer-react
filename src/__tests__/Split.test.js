@@ -17,7 +17,6 @@ describe('Split component', () => {
   test('renders the correct number of split records', () => {
     const splitRecords = ['00:01:02:03', '00:02:03:04', '00:03:04:05'];
     render(<Split splitRecords={splitRecords} />);
-
     const rows = screen.getAllByRole('row');
     expect(rows.length).toBe(splitRecords.length);
   });
@@ -25,7 +24,6 @@ describe('Split component', () => {
   test('renders the correct split records', () => {
     const splitRecords = ['00:01:02:03', '00:02:03:04', '00:03:04:05'];
     render(<Split splitRecords={splitRecords} />);
-
     splitRecords.forEach((record, index) => {
       expect(screen.getByText(`${index + 1}:`)).toBeInTheDocument();
       expect(screen.getByText(record)).toBeInTheDocument();
